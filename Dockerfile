@@ -39,5 +39,5 @@ RUN echo 'pou:pou' | chpasswd
 
 
 # Run
-CMD service xrdp stop && service xrdp start 
+CMD service xrdp stop && service xrdp start && tail -F /var/log/xrdp.log
 
