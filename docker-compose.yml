@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  abra:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: abra
+    ports:
+      - "3388:3389"  # RDP port
+
+
